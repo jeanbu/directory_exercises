@@ -1,6 +1,6 @@
 def input_students
-  puts "Please enter the names of the students"
-  puts "To finish, just hit return twice"
+  puts "Please enter the names of the students".center(43)
+  puts "To finish, just hit return twice".center(43)
   # create an empty array
   students = []
   # get the first nameand hobbie
@@ -18,13 +18,13 @@ def input_students
 end
 
 def print_header
-  puts "The students of Villains Academy"
-  puts "-------------"
+  puts "The students of Villains Academy".center(43)
+  puts "-------------".center(43)
 end
 
 def print(students)
   students.each.with_index(1) do |student, index|
-    puts "#{index}. #{student[:name]} (#{student[:cohort]} cohort)}."
+    puts "#{index}. #{student[:name]} (#{student[:cohort]} cohort)."
   end
 end
 
@@ -36,9 +36,8 @@ end
   
   
 def print_footer(students)
-  puts "Overall, we have #{students.count} great students"
+  puts "Overall, we have #{students.count} great students".center(43)
 end
-
 students = input_students
 #nothing happens until we call the methods
 print_header
